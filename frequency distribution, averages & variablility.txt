@@ -1,0 +1,29 @@
+import numpy as np
+import pandas as pd
+list = [2,4,4,4,5,5,7,9]
+data={'Grade':['A','A','A','B','B','B','B','C','D','D'],
+'Age':[18,18,18,19,19,20,18,18,19,19],
+'Gender':['M','M','F','F','F','M','M','F','M','F']}
+df = pd.DataFrame(data)
+print(df)
+print(list)
+print('Average :',np.average(list))
+print('Variance :',np.var(list))
+print('Standard Deviation :',np.std(list))
+
+
+Grade  Age Gender
+0     A   18      M
+1     A   18      M
+2     A   18      F
+3     B   19      F
+4     B   19      F
+5     B   20      M
+6     B   18      M
+7     C   18      F
+8     D   19      M
+9     D   19      F
+[2, 4, 4, 4, 5, 5, 7, 9]
+Average : 5.0
+Variance : 4.0
+Standard Deviation : 2.0

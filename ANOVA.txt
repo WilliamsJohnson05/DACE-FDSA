@@ -1,0 +1,33 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import statsmodels.api as sm
+from statsmodels.formula.api import ols
+import seaborn as sns
+import numpy as np
+import pandas.tseries
+plt.style.use('fivethirtyeight')
+mydata=pd.read_csv('Diet_Dataset.csv')
+print(mydata.head())
+print('\nThe total number of rows in the dataset:',mydata.size)
+print('\n',mydata.gender.unique())
+print(mydata[mydata.gender==' '])
+f,ax=plt.subplots(figsize=(11,9))
+plt.title('Weight Distributions among Sample')
+plt.ylabel('pdf')
+sns.distplot(mydata.age)
+plt.show()
+
+
+
+Output:
+person gender age height
+0 23 34 344
+1 32 45 233
+2 2 0 23 234
+3 3 0 34 345
+4 22 0 23 344
+The total number of rows in the dataset: 20
+[' ' '0']
+person gender age height
+0 23 34 344
+1 32 45 233

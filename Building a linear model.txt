@@ -1,0 +1,24 @@
+from pandas import read_csv
+from matplotlib import pyplot
+from pandas.plotting import autocorrelation_plot
+from pandas import DataFrame
+from statsmodels.tsa.arima_model import ARIMA
+def parser(x):
+return datetime.strptine('198"+x, "W-%a')
+series = read_csv("csv.csv")#, header=0, index_col=0, squeeze=True)
+print(series.head())
+series.plot()
+pyplot.figure()
+autocorrelation_plot(series)
+pyplot.show()
+
+
+Output:
+Age Cost
+0 12 12121
+1 12 2423
+2 22 234234
+3 3 23324
+4 23 232422
+
+

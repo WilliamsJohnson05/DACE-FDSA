@@ -1,0 +1,12 @@
+import pandas as pd
+data = {'Word':['happy','apple','blue','gloomy'],
+'Meaning':['happy','fruit','color','sad']}
+df = pd.DataFrame(data)
+print(df)
+
+
+import pandas as pd
+df = pd.read_csv('Sample.csv')
+print(df.head())
+print(df.tail())
+print(df.info())

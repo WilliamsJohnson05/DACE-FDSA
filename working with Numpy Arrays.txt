@@ -1,0 +1,20 @@
+import numpy as np
+list = [1,2,3,4]
+sample = np.array(list)
+print("created list %s"% list)
+print("Numpy array in python %s"% sample)
+print("Creating new list of array\n")
+new = np.array([(1,2,3),(4,5,6)])
+print('Squre Root of {}'.format(new))
+print(np.sqrt(new))
+   
+
+created list [1, 2, 3, 4]
+Numpy array in python [1 2 3 4]
+Creating new list of array
+
+Squre Root of [[1 2 3]
+ [4 5 6]]
+[[1.         1.41421356 1.73205081]
+ [2.         2.23606798 2.44948974]]
+
